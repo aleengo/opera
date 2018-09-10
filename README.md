@@ -1,2 +1,2 @@
 # opera
-Another Unofficial OPenEchangesRAtes
+Another Unofficial OPenEchangesRAtes wrapper
