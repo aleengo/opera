@@ -2,8 +2,10 @@
 
 const Opera = require('./lib/opera');
 
-const appId = 'd1ff258466994304854884d3600a75aa'
-const opera = Opera(appId);
+const appId = ''
+const proxy = '';
+
+const opera = Opera({appId, proxy});
 
 opera.currencies()
   .then( res => console.log(res))
