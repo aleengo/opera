@@ -1,16 +1,15 @@
-# opera
+# OPERA
 Another Unofficial OPenEchangesRAtes wrapper
 
 # Installation
 `opera` is available on [npm][npm_website]
-
 
 ```npm install opera --save```
 
 # Documentation
 Opera supports two functionnalities :
 
-## latest(params)
+## opera.latest(params)
 Get the latest exchange rates (JSON) available from the Open Exchange Rates API.
 
 Returns promise
@@ -36,7 +35,7 @@ Returns promise
 
 > **Note:** Changing the `base` currency is available for all clients of paid plans. Other parameters are availbale for all plans, including free.
 
-## currencies(params)
+## opera.currencies(params)
 Get a JSON list of all currency, and their full names, available from the Open Exchange Rates API.
 This list will always mirror the currencies available in the latest rates (given as their 3-letter codes).
 
@@ -63,9 +62,7 @@ Returns Promise
 All contributions are welcome.
 
 # License
-GNU GPLv3
+GNU GPLv3 &copy; aleengo.
 
 
 [npm_website]: https://www.npmjs.com/
-[string_doc]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
-[boolean_doc]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
