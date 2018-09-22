@@ -4,7 +4,7 @@
   "description": "Another unofficial Open Exchanges Rates wrapper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "dev": "node index.js"
   },
   "repository": {
@@ -24,5 +24,9 @@
   "homepage": "https://github.com/gnemoka/opera#readme",
   "dependencies": {
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
   }
 }
