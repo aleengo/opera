@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/aleengo/opera.svg?branch=master)](https://travis-ci.com/aleengo/opera)
+
 # OPERA
 Another Unofficial OPenEchangesRAtes wrapper
 
