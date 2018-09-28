@@ -1,5 +1,5 @@
 {
-  "name": "opera",
+  "name": "@aleengo/opera",
   "version": "1.2.0",
   "description": "Another unofficial Open Exchanges Rates wrapper",
   "main": "index.js",

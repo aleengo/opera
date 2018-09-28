@@ -17,7 +17,7 @@ Get the latest exchange rates (JSON) available from the Open Exchange Rates API.
 Returns promise
 
 ```javascript
-    const Opera = require('Opera');
+    const Opera = require('@aleengo/opera');
     
     let appId = '4554hshdhjsu';
     const opera = Opera({appId: appId});
@@ -44,7 +44,7 @@ This list will always mirror the currencies available in the latest rates (given
 Returns Promise
 
 ```javascript
-    const Opera = require('Opera');
+    const Opera = require('@aleengo/opera');
     
     let appId = '4554hshdhjsu';
     const opera = Opera({appId: appId});
