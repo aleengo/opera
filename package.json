@@ -4,7 +4,7 @@
   "description": "Another unofficial Open Exchanges Rates wrapper",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -u tdd --reporter spec",
+    "test": "mocha",
     "dev": "node index.js"
   },
   "repository": {

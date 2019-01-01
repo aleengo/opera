@@ -1,17 +1,23 @@
 [![Build Status](https://travis-ci.com/aleengo/opera.svg?branch=master)](https://travis-ci.com/aleengo/opera)
 
+[![Coverage Status](https://coveralls.io/repos/github/aleengo/opera/badge.svg)](https://coveralls.io/github/aleengo/opera)
+
 # OPERA
 Another Unofficial OPenEchangesRAtes wrapper
 
 # Installation
-`opera` is available on [npm][npm_website]
+`opera` is available on [npm][opera_npm_website]
 
-```npm install opera --save```
+```npm install --save @aleengo/opera```
 
 # Documentation
+
 Opera supports two functionnalities :
 
-## opera.latest(params)
+- [latest(params)](#latest)
+- [currencies(params)](#currencies)
+
+## latest(params)
 Get the latest exchange rates (JSON) available from the Open Exchange Rates API.
 
 Returns promise
@@ -37,7 +43,7 @@ Returns promise
 
 > **Note:** Changing the `base` currency is available for all clients of paid plans. Other parameters are availbale for all plans, including free.
 
-## opera.currencies(params)
+## currencies(params)
 Get a JSON list of all currency, and their full names, available from the Open Exchange Rates API.
 This list will always mirror the currencies available in the latest rates (given as their 3-letter codes).
 
@@ -67,4 +73,4 @@ All contributions are welcome.
 GNU GPLv3 &copy; aleengo.
 
 
-[npm_website]: https://www.npmjs.com/
+[opera_npm_website]: https://www.npmjs.com/package/@aleengo/opera
