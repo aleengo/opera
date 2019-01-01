@@ -1,6 +1,6 @@
 {
   "name": "@aleengo/opera",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Another unofficial Open Exchanges Rates wrapper",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "converter"
   ],
   "author": "gnemoka",
-  "license": "MIT",
+  "license": "GNU GPLv3",
   "bugs": {
     "url": "https://github.com/gnemoka/opera/issues"
   },
@@ -26,7 +26,7 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "mocha": "^5.2.0"
   }
 }
