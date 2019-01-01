@@ -14,23 +14,24 @@ Another Unofficial OPenEchangesRAtes wrapper
 
 Opera supports two functionnalities :
 
-- [latest(params)](#latest)
-- [currencies(params)](#currencies)
+- [latest(params)](#latest(params))
+- [currencies(params)](#currencies(params))
+- [Proxy](#Proxy)
 
 ## latest(params)
 Get the latest exchange rates (JSON) available from the Open Exchange Rates API.
 
-Returns promise
+Returns a promise
 
 ```javascript
     const Opera = require('@aleengo/opera');
     
-    let appId = '4554hshdhjsu';
-    const opera = Opera({appId: appId});
+    let appID = '4554hshdhjsu';
+    const opera = new Opera(appID);
     opera.latest()
-        .then( res => res.body )
-        .then( json => console.log(json.rates) )
-        .catch( err => console.log(err) );
+        .then(res => res.body)
+        .then(data => console.log(data.rates))
+        .catch(e => console.log(e));
 ```
 
 ### Params
@@ -47,25 +48,41 @@ Returns promise
 Get a JSON list of all currency, and their full names, available from the Open Exchange Rates API.
 This list will always mirror the currencies available in the latest rates (given as their 3-letter codes).
 
-Returns Promise
+Returns a promise
 
 ```javascript
     const Opera = require('@aleengo/opera');
     
-    let appId = '4554hshdhjsu';
-    const opera = Opera({appId: appId});
+    let appID = '4554hshdhjsu';
+    const opera = Opera(appID);
     opera.currencies()
-        .then( res => res.body )
-        .then( currencies => console.log(currencies) )
-        .catch( err => console.log(err) );
+        .then(res => console.log(res.body))
+        .catch(e => console.log(e));
 ```
 ### 
 | params   | type   | optional  | description|
 |----------|--------|-----------|------------|
-| show_alternative  | string | yes | Extend returned values with alternative, black market and digital currency rates|
+| show_alternative  | boolean | yes | Extend returned values with alternative, black market and digital currency rates|
 |show_inactive| boolean | yes | Include historical/inactive currencies|
 
 
+## Proxy
+If you are behind a proxy, you can specified an extra parameter to Opera object.
+
+Specify a string as the extra parameter
+
+```javascript
+    const Opera = require('@aleengo/opera');
+    
+    const appID = '4554hshdhjsu';
+    const proxy = 'http://username:pass@proxy_host:proxy_port'
+
+    const opera = new Opera(appID, proxy);
+    opera.latest()
+        .then(res => res.body )
+        .then(data => console.log(data.rates))
+        .catch(e => console.log(e));
+```
 # Contributing
 All contributions are welcome.
 
