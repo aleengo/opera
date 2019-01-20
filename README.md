@@ -54,7 +54,7 @@ Returns a promise
     const Opera = require('@aleengo/opera');
     
     let appID = '4554hshdhjsu';
-    const opera = Opera(appID);
+    const opera = new Opera(appID);
     opera.currencies()
         .then(res => console.log(res.body))
         .catch(e => console.log(e));
